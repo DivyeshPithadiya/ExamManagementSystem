@@ -28,7 +28,7 @@
 
         if(($ro2['count(Sub)']<2) && ($ro3['count(UTime)']==0))
         {
-            $qf="insert into UT_TT(UTDate,Sub,UTime,Sem) values('$date','$sub','$time',$sem)"; //Storing data into the Table of Unit Test
+            $qf="insert into ut_tt(UTDate,Sub,UTime,Sem) values('$date','$sub','$time',$sem)"; //Storing data into the Table of Unit Test
 			$resf=mysqli_query($conn,$qf);
 			header("Location:UT_TT.php?message=Exam Data Stored for ".$ro0['Sub']." Subject");
         }

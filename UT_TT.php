@@ -57,7 +57,7 @@
                         
                         <?php
 
-                        $query="SELECT * FROM exammanagementsystem.subjects order by Sem";
+                        $query="select * from subjects order by Sem";
                         
                         $res=mysqli_query($conn,$query);
                     

@@ -38,7 +38,7 @@
                     $sem=$i;
                     echo "<p style='color:grey;'><b>Computer Engineering Semester-".$sem."</b></p>";
                     //Showing the Details of Subjects,Dates and Semesters
-                    $s="select lab_Exam.EID,external_faculty.EID,ExID,LabNo,semester.SemName,subjects.Sub,date1,date2,date3,date4,EName,Experience,college,phone,email from lab_exam,subjects,semester,External_faculty where lab_exam.Sub=subjects.SuID and lab_exam.Sem=semester.SemID and external_faculty.EID=lab_exam.EID and lab_exam.sem=$sem";
+                    $s="select lab_exam.EID,external_faculty.EID,ExID,LabNo,semester.SemName,subjects.Sub,date1,date2,date3,date4,EName,Experience,college,phone,email from lab_exam,subjects,semester,external_faculty where lab_exam.Sub=subjects.SuID and lab_exam.Sem=semester.SemID and external_faculty.EID=lab_exam.EID and lab_exam.sem=$sem";
                     $sre=mysqli_query($conn,$s);
 
                     echo "<table  border='2' class='table table-striped'>";

@@ -130,7 +130,7 @@
 						echo "<br><br>";
 						echo "<p><b><u>Subjects Of Semester $show</u></b></p>"; //just for printing the statement
 					
-						$s1query="select SuID,Sub,Sem from Subjects where Sem=$sem ";
+						$s1query="select SuID,Sub,Sem from subjects where Sem=$sem";
 						$s1res=mysqli_query($conn,$s1query);
 						echo "<table border='2' class='table-striped'>
 							<tr>

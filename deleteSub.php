@@ -43,7 +43,7 @@
 	mysqli_commit($conn);
 	mysqli_close($conn);
 
-	header("Location:subject.php?message2=$sub Subject Deleted from Semester $show && sem=$sem");
+	header("Location:subject.php?message2=$sub Subject Deleted from semester $show && sem=$sem");
 
 	?>
 		

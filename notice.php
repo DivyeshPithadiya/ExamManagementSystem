@@ -33,7 +33,7 @@
   		$msg = "Failed to upload image";
   	}
   }
-  $result = mysqli_query($conn, "SELECT * FROM images");
+  $result = mysqli_query($conn, "select * from images");
 ?>
 <html>
 <head>
