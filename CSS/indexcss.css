@@ -1,0 +1,438 @@
+.i1 {
+  background-color: #cc0500;
+  height: 636;
+  width: 210;
+  position: absolute;
+  top: 10;
+  left: 10;
+}
+
+.i2 {
+  color: white;
+  margin-top: 50;
+}
+
+.i3 {
+  background-color: #9d0806;
+  height: 50;
+  width: 150;
+  position: absolute;
+  top: 10;
+  left: 1190;
+}
+
+.i4 {
+  height: 350;
+  background-color: #9d0806;
+  width: 100%;
+  margin-top: 50;
+  box-shadow: 0 0 15px #666;
+}
+
+.i5 {
+  font-size: 40;
+  position: absolute;
+  left: 380;
+  top: 330;
+  color: white;
+}
+
+.img-css {
+  margin-left: 150px;
+}
+
+.notice {
+  background-color: rgb(43, 37, 37);
+  color: white;
+  height: 25;
+  width: 100%;
+}
+.notice2 {
+  margin-left: 50;
+}
+
+.menu {
+  display: block;
+}
+
+.img-css2 {
+  display: none;
+}
+.WebContainer {
+  width: 100%;
+  min-width: 1000px;
+  height: auto;
+}
+
+@media screen and (max-width: 1325px) {
+  .img-css {
+    margin-top: -25px;
+    margin-left: 90px;
+  }
+
+  .notice2 {
+    margin-left: 0;
+  }
+
+  .i3 {
+    display: none;
+  }
+  .i4 {
+    margin-left: auto;
+    width: 100%;
+  }
+  p.i5 {
+    position: absolute;
+    left: 20%;
+    right: 15%;
+  }
+  .notice {
+    background-color: rgb(43, 37, 37);
+    color: white;
+    height: 25;
+    width: 100%;
+  }
+  .menu {
+    display: block;
+  }
+}
+@media screen and (max-width: 1021px) {
+  .img-css {
+    margin-top: -25px;
+    margin-left: 90px;
+  }
+
+  .notice2 {
+    margin-left: 0;
+  }
+ 
+  .i3 {
+    display: none;
+  }
+  .i4 {
+    margin-left: auto;
+    width: 100%;
+  }
+  p.i5 {
+    position: absolute;
+    left: 20%;
+    top: 20%;
+    right: 15%;
+  }
+  .notice {
+    background-color: rgb(43, 37, 37);
+    color: white;
+    height: 25;
+    width: 100%;
+  }
+  .menu {
+    display: block;
+  }
+}
+
+@media screen and (max-width: 1110px) {
+  .img-css {
+    margin-top: -25px;
+    margin-left: 90px;
+  }
+
+  .notice2 {
+    margin-left: 0;
+  }
+
+  .i3 {
+    display: none;
+  }
+  .i4 {
+    margin-left: auto;
+    width: 100%;
+  }
+  p.i5 {
+    position: absolute;
+    left: 20%;
+    top: 40%;
+    right: 15%;
+  }
+  .notice {
+    background-color: rgb(43, 37, 37);
+    color: white;
+    height: 25;
+    width: 100%;
+  }
+  .menu {
+    display: block;
+  }
+}
+
+@media screen and (max-width: 1030px) {
+  .img-css {
+    margin-top: -25px;
+    margin-left: 90px;
+  }
+
+  .notice2 {
+    margin-left: 0;
+  }
+
+  .i3 {
+    display: none;
+  }
+  .i4 {
+    margin-left: auto;
+    width: 100%;
+  }
+  p.i5 {
+    position: absolute;
+    left: 20%;
+    top: 20%;
+    right: 15%;
+  }
+  .notice {
+    background-color: rgb(43, 37, 37);
+    color: white;
+    height: 25;
+    width: 100%;
+  }
+  .menu {
+    display: block;
+  }
+}
+
+@media screen and (max-width: 930px) {
+  .img-css {
+    margin-top: -25px;
+    height: 100px;
+    width: 600px;
+  }
+  .notice2 {
+    margin-left: 0;
+  }
+
+
+  .i3 {
+    display: none;
+  }
+  .i4 {
+    margin-left: auto;
+    width: 100%;
+  }
+  p.i5 {
+    position: absolute;
+    left: 20%;
+    right: 15%;
+  }
+  .notice {
+    background-color: rgb(43, 37, 37);
+    color: white;
+    height: 25;
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 770px) {
+  .img-css {
+    display: none;
+  }
+  .notice2 {
+    margin-left: 0;
+  }
+  .img-css2 {
+    display: block;
+  }
+
+ 
+  .i3 {
+    display: none;
+  }
+  .i4 {
+    margin-left: auto;
+    width: 100%;
+  }
+  p.i5 {
+    position: absolute;
+    top: 30%;
+    left: 13%;
+    right: 15%;
+  }
+  .notice {
+    background-color: rgb(43, 37, 37);
+    color: white;
+    height: 25;
+    width: 100%;
+  }
+  .menu {
+    display: block;
+  }
+}
+
+@media screen and (max-width: 613px) {
+  .img-css {
+    display: none;
+  }
+  .notice2 {
+    margin-left: 0;
+  }
+  .img-css2 {
+    display: block;
+  }
+  .i3 {
+    display: none;
+  }
+  .i4 {
+    margin-left: auto;
+    width: 100%;
+  }
+  p.i5 {
+    position: absolute;
+    top: 29%;
+    left: 13%;
+    right: 15%;
+  }
+  .notice {
+    background-color: rgb(43, 37, 37);
+    color: white;
+    height: 25;
+    width: 100%;
+  }
+  .menu {
+    display: block;
+  }
+}
+
+@media screen and (max-width: 653px) {
+  .img-css {
+    display: none;
+  }
+  .img-css2 {
+    display: block;
+  }
+
+  .i3 {
+    display: none;
+  }
+  .i4 {
+    margin-left: auto;
+    width: 100%;
+    height: 60%;
+    margin-top: 6%;
+  }
+  p.i5 {
+    position: absolute;
+    top: 29%;
+    left: 13%;
+    right: 15%;
+  }
+  .notice {
+    background-color: rgb(43, 37, 37);
+    color: white;
+    height: 25;
+    width: 100%;
+  }
+  .menu {
+    display: block;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .img-css {
+    display: none;
+  }
+  .img-css2 {
+    display: block;
+  }
+
+  .i3 {
+    display: none;
+  }
+  .i4 {
+    margin-left: auto;
+    width: 100%;
+    height: 60%;
+    margin-top: 6%;
+  }
+  p.i5 {
+    font-size: 30;
+    position: absolute;
+    top: 38%;
+    left: 13%;
+    right: 15%;
+  }
+  .notice {
+    background-color: rgb(43, 37, 37);
+    color: white;
+    height: 25;
+    width: 100%;
+  }
+  .menu {
+    display: block;
+  }
+}
+@media screen and (max-width: 313px) {
+  .img-css {
+    display: none;
+  }
+  .img-css2 {
+    display: block;
+  }
+
+  .i3 {
+    display: none;
+  }
+  .i4 {
+    margin-left: auto;
+    width: 100%;
+    height: 60%;
+    margin-top: 6%;
+  }
+  p.i5 {
+    font-size: 30;
+    position: absolute;
+    top: 29%;
+    left: 13%;
+    right: 15%;
+  }
+  .notice {
+    background-color: rgb(43, 37, 37);
+    color: white;
+    height: 25;
+    width: 100%;
+  }
+  .menu {
+    display: block;
+  }
+}
+@media screen and (min-width: 1403px) {
+  .img-css {
+    margin-top: 0;
+    display: block;
+  }
+  .img-css2 {
+    display: none;
+  }
+
+  .i3 {
+    display: none;
+  }
+  .i4 {
+    height: 350;
+    background-color: #9d0806;
+    width: 100%;
+    margin-top: 50;
+    box-shadow: 0 0 15px #666;
+  }
+  p.i5 {
+    position: absolute;
+    top: 38%;
+    left: 22%;
+    right: 15%;
+  }
+  .notice {
+    background-color: rgb(43, 37, 37);
+    color: white;
+    height: 25;
+    width: 100%;
+  }
+  .menu {
+    display: block;
+  }
+}

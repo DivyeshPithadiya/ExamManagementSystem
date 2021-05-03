@@ -1,0 +1,81 @@
+.demo1 {
+  align-self: center;
+  background-color: #cc0500;
+  height: 500;
+  width: 948;
+  position: fixed;
+  margin-left: 200px;
+  margin-top: 68.08px;
+}
+.demo2 {
+  align-content: center;
+  background-color: white;
+  height: 435.5;
+  width: 779.4;
+  position: fixed;
+  top: 208;
+  left: 369;
+  box-shadow: 0 0 8px #666;
+}
+
+.demo3 {
+  background-color: #ec0500;
+  height: 63.8px;
+  width: 200px;
+  margin-left: 80px;
+  position: absolute;
+  top: -64px;
+  left: 500px;
+}
+
+.demo4 {
+  padding: 10px;
+  width: 200;
+  border-radius: 10px;
+}
+
+.demo5 {
+  width: 300;
+  height: 30;
+  margin-top: 30;
+}
+
+.demo6 {
+  width: 80;
+  height: 40;
+  margin-top: 20;
+  background-color: #cc0500;
+  color: white;
+}
+
+.demo7 {
+  width: 400;
+  height: 30;
+  margin-top: 20;
+}
+
+.demo8 {
+  text-decoration: none;
+  color: #cc0500;
+}
+
+.demo {
+  border-width: 2px;
+  background-color: #cc0500;
+}
+.demo0 {
+  display: inline-block;
+  text-decoration: none;
+  color: white;
+  padding: 17;
+  border-radius: 5px;
+}
+.nav {
+  display: block;
+}
+div li:hover {
+  background-color: rgba(134, 3, 3, 0.596);
+}
+.menu {
+  display: none;
+}
