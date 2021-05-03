@@ -13,6 +13,6 @@
     mysqli_commit($conn);
     mysqli_close($conn);
 
-    header("Location:Notice.php");
+    header("Location:notice.php");
 
 ?>
