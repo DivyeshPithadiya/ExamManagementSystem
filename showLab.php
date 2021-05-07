@@ -4,8 +4,18 @@
     <title>
 		Practical/Oral Time Table
 	</title>
-	<link rel="icon" href="pageImages/mobileHomeImg.png" type="image/icon type">
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"></head>
+	
+    <link rel="icon" href="pageImages/mobileHomeImg.png" type="image/icon type">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"></head>
+
+    <!-- Dwnload As PDF Script -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.5.3/jspdf.min.js"></script>  
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf-autotable/3.5.6/jspdf.plugin.autotable.min.js"></script>
+
+    <script type="text/javascript" src="saveAsPdf.js"></script>  
+
+<style>  
+</style> 
 
 	</head>
 	
@@ -59,8 +69,9 @@
                     $s="select semester.SemName,subjects.Sub,date1,date2,date3,date4 from lab_exam,subjects,semester where lab_exam.Sub=subjects.SuID and lab_exam.Sem=semester.SemID and lab_exam.Sem=$sem ";
                     $sre=mysqli_query($conn,$s);
 
+                    echo "<input style='background-color:#002b80;color:white;margin-right:5px;float:right;' class='btn' type='button' onclick='generate()' value='Export As PDF' /> ";  // Download As PDF Function
                     echo "<p style='color:#cc0500'><b><i>Semester ".$sem." Practical/Oral Time Table</i></b></p>";
-                    echo "<table  border='2' class='table table-striped'>
+                    echo "<table id='simple_table' border='2' class='table table-striped'>
                     <thead class='thead-dark'>
                             <th>Subject</th>
                             <th>Batch1/2</th>
@@ -81,7 +92,6 @@
                             </tr>";
                     }
                     echo "</table>";
-
             }
         }
 
@@ -91,9 +101,10 @@
 
 
             ?>
-
-
-
-
     </body>
+
+
+    <!-- Script For Download As PDF-->
+    
+
     </html>

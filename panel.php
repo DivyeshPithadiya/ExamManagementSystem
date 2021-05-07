@@ -14,8 +14,8 @@
 
 
 	<?php
-	session_start();
-	if($_SESSION['excess'])
+	session_start();   //  If Logged in than go to Admin Panel 
+	if($_SESSION['excess']) 
 	{	
 	require 'navbar.php'; //Navigation bar
         ?>

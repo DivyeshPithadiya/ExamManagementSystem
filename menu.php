@@ -65,7 +65,7 @@ body {
   <a href="showLab.php">Practical/Oral Time Table</a>
   <a href="showTT.php">Term Test Time Table</a>
   <a href="noticeShow.php">Notice Board</a>
-  <a href="login.php">Admin Login</a>
+  <a href="login.php">Admin Login / Admin Panel</a>
 
 </div>
 

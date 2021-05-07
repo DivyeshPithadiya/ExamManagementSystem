@@ -18,6 +18,19 @@
   box-shadow: 0 0 8px #666;
 }
 
+.login 
+{
+    align-content: center;
+    background-color: white;
+    height: 350;
+    width: 50%;
+    position: absolute;
+    top: 208;
+    box-shadow: 0 0 8px #666;
+    margin-left:25%;
+    border-radius:10px;
+}
+
 .demo3 {
   background-color: #ec0500;
   height: 63.8px;
