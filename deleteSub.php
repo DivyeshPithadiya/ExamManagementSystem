@@ -17,12 +17,13 @@
 		$scode=$_GET['Scode'];
 		}
 	
-	$query="delete from subjects where SuID='$scode' && Sub='$sub' && Sem=$sem ";
+		$query="delete from subjects where SuID='$scode' and Sub='$sub' and Sem=$sem";
 	
-	$res=mysqli_query($conn,$query);
-	
-	$row=mysqli_fetch_array($res);
-	
+		$res=mysqli_query($conn,$query);
+
+		echo mysqli_error($conn);
+		//$row=mysqli_fetch_array($res);
+
 	switch($sem)
 	{
 		case 3:$show="III";

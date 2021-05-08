@@ -132,7 +132,7 @@
 					  echo "<tr>
 					  			<td>$s1row[SuID]</td>
 								<td>$s1row[Sub]</td>
-								<td><a href='deleteSub.php?sub=$s1row[Sub] && sem=$s1row[Sem] && Scode=$s1row[SuID]'>Delete</a></td>
+								<td><a href='deleteSub.php?sub=$s1row[Sub]&&sem=$s1row[Sem]&&Scode=$s1row[SuID]'>Delete</a></td>
 							</tr>";
 						}
 					}
