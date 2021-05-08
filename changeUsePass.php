@@ -17,26 +17,28 @@
 			<?php require 'navbar.php';  //Navigation bar
         ?> 
 			
-			
-			<div class="demo1">
-				<div class="demo2">
+<!-- 			
+			<div class="demo1"> -->
+				<div class="panel">
 				
 					
 				<form method="post" action="usepassValidation.php" id="myForm">
 					<center>
 					<p><font color="#cc0500" size="6"><center><b>Change Username and Password of Admin</font></b></center></p>
 					
-					<input type="text" name="oname" required placeholder="Enter Your Old Username" style=width:400;height:30;margin-top:30;>
-					<input type="password" required  name="opassword" placeholder="Enter Your Old Password" class="demo7">
+					<input type="text" name="oname" required placeholder="Enter Your Old Username" style=width:400;height:30;margin-top:30;><br/>
+					<input type="password" required  name="opassword" placeholder="Enter Your Old Password" class="demo7"><br/>
 					
-					<input type="text" name="nname" required placeholder="Enter Your New Username" class="demo7">
-					<input type="password" required  name="npassword" placeholder="Enter Your New Password" class="demo7">
+					<input type="text" name="nname" required placeholder="Enter Your New Username" class="demo7"><br/>
+					<input type="password" required  name="npassword" placeholder="Enter Your New Password" class="demo7"><br/>
 			
+				
+					<button type="submit" class="demo6 btn">Submit</button>
+					<button type="reset" class="demo6 btn" style="margin-right:235px;">Reset</button>
+
 					</center>
-					
-					<button type="submit" class="demo6 btn" style=margin-left:191;>Submit</button>
-					<button type="reset" class="demo6 btn">Reset</button>
-					<br><br>
+				
+				
 					<center>
 					<?php
 					echo "<font style=color:#cc0500>";
@@ -49,9 +51,9 @@
 					</center>
 					</form>
 					
-
+<!-- 
 			<div class="demo3">		
-			</div>
+			</div> -->
 				
 				
 				</div>

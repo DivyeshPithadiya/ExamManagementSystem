@@ -21,41 +21,37 @@
 	if($_SESSION['excess'])
 	{
 		?>
-			<div class="demo1">
-				<div class="demo2">
-								
-				<form method="post" id="myForm"  action="fusepassValidation.php">
-					<center>
-					<p><font color="#cc0500" size="6"><center><b>Change Username and Password of Faculty</font></b></center></p>
-					
-					<input type="text" name="oname" required placeholder="Enter Faculty Old Username" style=width:400;height:30;margin-top:30;>
-					<input type="password" required  name="opassword" placeholder="Enter Faculty Old Password" class="demo7">
-					
-					<input type="text" name="nname" required placeholder="Enter Faculty New Username" class="demo7">
-					<input type="password" required  name="npassword" placeholder="Enter Faculty New Password" class="demo7">
 			
-					</center>
+				<div class="panel">
+								
+					<form method="post" id="myForm"  action="fusepassValidation.php">
+						<center>
+						<p><font color="#cc0500" size="6"><center><b>Change Username and Password of Faculty</font></b></center></p>
+						
+						<input autofocus type="text" name="oname" required placeholder="Enter Faculty Old Username" style=width:400;height:30;margin-top:30;><br/>
+						<input type="password" required  name="opassword" placeholder="Enter Faculty Old Password" class="demo7"><br/>
+						
+						<input type="text" name="nname" required placeholder="Enter Faculty New Username" class="demo7"></br>
+						<input type="password" required  name="npassword" placeholder="Enter Faculty New Password" class="demo7"><br/>
+				
 					
-					<button type="submit" class="demo6 btn" style=margin-left:191;>Submit</button>
-					<button type="reset" class="demo6 btn">Reset</button>
-					<br><br>
-					<center>
-					<?php
-					echo "<font style=color:#cc0500>";
-						if(isset($_GET['message']))
-						{
-							echo $_GET['message'];
-						}
-					echo "</font>";
-					?>
-					</center>
+						<button type="submit" class="demo6 btn">Submit</button>
+						<button type="reset" class="demo6 btn" style="margin-right:235px;">Reset</button>
+
+						</center>
+					
+						<center>
+						<?php
+						echo "<font style=color:#cc0500>";
+							if(isset($_GET['message']))
+							{
+								echo $_GET['message'];
+							}
+						echo "</font>";
+						?>
+						</center>
 					</form>
 					
-
-			<div class="demo3">		
-			</div>
-				
-				
 				</div>
 				
 		

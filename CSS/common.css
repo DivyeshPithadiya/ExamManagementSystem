@@ -31,6 +31,20 @@
     border-radius:10px;
 }
 
+.panel 
+{
+    align-content: center;
+    background-color: white;
+    
+    width: 50%;
+    position: absolute;
+    top: 100;
+    left: 25%;
+    box-shadow: 0 0 8px #666;
+    border-radius:10px;
+}
+
+
 .demo3 {
   background-color: #ec0500;
   height: 63.8px;
@@ -92,3 +106,19 @@ div li:hover {
 .menu {
   display: none;
 }
+
+.flex-container {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  border-radius:10px;
+  
+  }
+
+  .flex-container > div {
+  background-color: #f1f1f1;
+  margin: 5px;
+  text-align: center;
+  line-height: 75px;
+  border-radius: 10px;
+  }

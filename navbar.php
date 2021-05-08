@@ -1,5 +1,9 @@
 <html>
      <link rel="stylesheet" type="text/css" href="CSS/common.css"> 
+    <head>
+    
+    </head>
+<body>
      
         <div style=background-color:#cc0500;margin-top:2; clss="nav">
         <center>
@@ -10,8 +14,16 @@
                 <a href="showTT.php"><li class="demo0">Term Test Time Table</li></a>
                 <a href="noticeShow.php"><li class="demo0">Notice Board</li></a>
                 <a href="panel.php"><li class="demo0">Admin Panel</li></a>
-                
+
+                <!-- <form method="POST" action="logout.php">
+                <button type="submit" class='btn btn-primary' style='float: right;margin:10px'>Log-out</button>
+                </form> -->
             </ul>
         </center>
         </div>
-    </html>
+
+</body>
+
+
+      
+</html>
