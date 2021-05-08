@@ -25,23 +25,10 @@
 	<link rel="stylesheet" type="text/css" href="CSS/common.css">
 	<link rel="stylesheet" type="text/css" href="CSS/indexcss.css">
 	
-	<div class="i1" style=margin-top:55;>
-		
-		<a href="subject.php?sem=3" style=text-decoration:none;><center><P style=color:white;margin-top:100;>Semeter III Subjects</p></center></a>
-		<a href="subject.php?sem=4" style=text-decoration:none;><center><P class="i2">Semeter IV Subjects</p></center></a>
-		<a href="subject.php?sem=5" style=text-decoration:none;><center><P class="i2">Semeter V Subjects</p></center></a>
-		<a href="subject.php?sem=6" style=text-decoration:none;><center><P class="i2">Semeter VI Subjects</p></center></a>
-		<a href="subject.php?sem=7" style=text-decoration:none;><center><P class="i2">Semeter VII Subjects</p></center></a>
-		<a href="subject.php?sem=8" style=text-decoration:none;><center><P class="i2">Semeter VIII Subjects</p></center></a>
-		
-	</div>
-	
-	
 	
 	<?php require 'navbar.php'; //Navigation bar
         ?>
-	
-		<div>
+		<div style="box-shadow: 0 0 8px #666;width:50%;margin-left:25%;padding:20px;border-radius:10px;">
 		<center>
 
 			<p><font color="#cc0500" size="6"><center><b>Subject Deteils</font></b></center></p>
@@ -178,7 +165,19 @@
 	mysqli_commit($conn);
 	mysqli_close($conn);
 	?>
+	
+	
+	<div class="flex-container-subjects" style="margin-top:40px;">
 		
+		<div><a href="subject.php?sem=3" style=text-decoration:none;color:#cc0500;><center><P>Semeter III Subjects</p></center></a></div>
+		<div><a href="subject.php?sem=4" style=text-decoration:none;color:#cc0500;><center><P >Semeter IV Subjects</p></center></a></div>
+		<div><a href="subject.php?sem=5" style=text-decoration:none;color:#cc0500;><center><P >Semeter V Subjects</p></center></a></div>
+		<div><a href="subject.php?sem=6" style=text-decoration:none;color:#cc0500;><center><P >Semeter VI Subjects</p></center></a></div>
+		<div><a href="subject.php?sem=7" style=text-decoration:none;color:#cc0500;><center><P>Semeter VII Subjects</p></center></a></div>
+		<div><a href="subject.php?sem=8" style=text-decoration:none;color:#cc0500;><center><P>Semeter VIII Subjects</p></center></a></div>
+		
+	</div>
+	
 	</body>
 	
 </html>

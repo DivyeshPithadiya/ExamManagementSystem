@@ -22,11 +22,10 @@
 	{
 		?>
         <center>
-        <div>
+        <div  style="box-shadow: 0 0 8px #666;padding:20px;border-radius:10px;">
 
             <p><font color="#cc0500" size="6"><center><b>Practical / Oral Exam Details</font></b></center></p>
-               
-            <hr>
+            
                 <?php
 
            
@@ -36,10 +35,14 @@
             while($i<=8)
                 {
                     $sem=$i;
-                    echo "<p style='color:grey;'><b>Computer Engineering Semester-".$sem."</b></p>";
+                  
                     //Showing the Details of Subjects,Dates and Semesters
                     $s="select lab_exam.EID,external_faculty.EID,ExID,LabNo,semester.SemName,subjects.Sub,date1,date2,date3,date4,EName,Experience,college,phone,email from lab_exam,subjects,semester,external_faculty where lab_exam.Sub=subjects.SuID and lab_exam.Sem=semester.SemID and external_faculty.EID=lab_exam.EID and lab_exam.sem=$sem";
                     $sre=mysqli_query($conn,$s);
+
+                    echo "<div style='box-shadow: 0 0 5px #666;width:100%;padding:20px;border-radius:10px;margin:10px;'>";
+
+                    echo "<p style='color:grey;'><b>Computer Engineering Semester-".$sem."</b></p>";
 
                     echo "<table  border='2' class='table table-striped'>";
                     echo "<tr>
@@ -79,7 +82,9 @@
                                 <td><a href='deleteLabExam.php?id=".$sro['ExID']."'>Delete</a></td>
                             </tr>";
                     }
-                    echo "</table><hr>";
+                    echo "</table>";
+
+                    echo "</div>";
                     $i++; 
                 }
 

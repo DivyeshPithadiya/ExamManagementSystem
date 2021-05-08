@@ -11,7 +11,7 @@
         <script type="text/javascript" src="validation.js"> </script>
 	</head>
 	
-	<body style=background-color:white;>
+	<body style=background-color:#F5B842;>
 	
 	<link rel="stylesheet" type="text/css" href="CSS/common.css">
 	<?php require 'navbar.php'; //Navigation bar
@@ -22,7 +22,7 @@
 	{
 		?>
 			
-				<div class="panel">
+				<div class="changeDetails">
 								
 					<form method="post" id="myForm"  action="fusepassValidation.php">
 						<center>

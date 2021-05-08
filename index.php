@@ -4,9 +4,9 @@
 		Exam Managemenet System
 	</title>
 	<link rel="icon" href="pageImages/mobileHomeImg.png" type="image/icon type">
-<link rel="stylesheet" type="text/css" href="CSS/indexcss.css" />
-<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"></head>
-<meta name="viewport" charset="utf-8" content="width=device-width, initial-scale=1.0 ,user-scalable=no" >
+	<link rel="stylesheet" type="text/css" href="CSS/indexcss.css" />
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"></head>
+	<meta name="viewport" charset="utf-8" content="width=device-width, initial-scale=1.0 ,user-scalable=no" >
 </head>
 
 	<body>
@@ -21,7 +21,7 @@
 			</div>
 
 			<div>
-			<center>
+				<center>
 				<img src="pageImages/home.jpg" height="120" width="820" class="img-css"></img>
 				</center>
 

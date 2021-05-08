@@ -31,7 +31,7 @@
 	{
 		?>
         
-		<div>
+		<div  style="box-shadow: 0 0 8px #666;width:50%;margin-left:25%;padding:20px;border-radius:10px;">
 
         <p><font color="#cc0500" size="6"><center><b>Unit Test Time Table</font></b></center></p>
         <center>
@@ -108,7 +108,7 @@
 		</div>
         <hr>
 
-        <div class="container">
+        <div>
         <?php
         
         for($i=3;$i<=8;$i++)
