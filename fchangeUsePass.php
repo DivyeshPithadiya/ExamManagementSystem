@@ -47,7 +47,7 @@
 							{
 								echo $_GET['message'];
 							}
-						echo "</font>";
+						echo "</font><br>";
 						?>
 						</center>
 					</form>

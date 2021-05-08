@@ -34,10 +34,10 @@
 					<?php
 						if(isset($_GET['message']))
 						{
-							echo "<br><br>";
+							echo "<br>";
 							echo "<font color='red'>";
 							echo "$_GET[message]";
-							echo "</font>";
+							echo "</font><br>";
 						}
 					?>
 
