@@ -9,7 +9,7 @@
 
 	</head>
 	
-	<body style=background-color:#F5B842;>
+	<body style=background-color:white;>
 	
 	<link rel="stylesheet" type="text/css" href="CSS/common.css">
 			
