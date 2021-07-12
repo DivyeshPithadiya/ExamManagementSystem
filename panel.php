@@ -36,6 +36,12 @@
 					</div>
 
 					<div>
+						<a href="notice.php" class="demo8">
+							<span>Upload Notice</span>
+						</a>
+					</div>
+
+					<div>
 						<a href="EditLab.php" class="demo8">
 							<span>Edit Oral/Practical Time Table</span><br>
 						</a>
@@ -70,7 +76,6 @@
 							<span>External Faculty Details</span>
 						</a>
 					</div>
-
 
 				</div>
 				</center>
