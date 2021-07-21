@@ -14,7 +14,7 @@
 	<link rel="stylesheet" type="text/css" href="CSS/common.css">
 	<link rel="stylesheet" type="text/css" href="CSS/indexcss.css">
 	
-	<?php require 'navbar.php'; //Navigation bar
+	<?php require 'backnav.php'; //Navigation bar
         ?>
 
 <?php 

@@ -26,7 +26,7 @@
 	<link rel="stylesheet" type="text/css" href="CSS/indexcss.css">
 	
 	
-	<?php require 'navbar.php'; //Navigation bar
+	<?php require 'backnav.php'; //Navigation bar
         ?>
 		<div style="box-shadow: 0 0 8px #666;width:50%;margin-left:25%;padding:20px;border-radius:10px;">
 		<center>

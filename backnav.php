@@ -4,15 +4,14 @@
     
     </head>
 <body>
-    
      
         <div style=background-color:#cc0500;margin-top:2;>
+        
         <div style="width:40%;height:80%;position:absolute;left:4%;top:0.6%;">
-                <a href="index.php"><li class="demo0" style="width:10%;border-radius:100px;"><img height="3%" width="100%" style="border-radius:100px;" src="./pageImages/back.png"/></li></a>
+                <a href="panel.php"><li class="demo0" style="width:10%;border-radius:100px;"><img height="3%" width="100%" style="border-radius:100px;" src="./pageImages/back.png"/></li></a>
         </div>
         <center>
             <ul class="demo">
-           
                 <a href="index.php"><li class="demo0">Home</li></a>
                 <a href="userlogin.php"><li class="demo0">Faculty Login</li></a>
                 <a href="showLab.php"><li class="demo0">Practical/Oral Time Table</li></a>

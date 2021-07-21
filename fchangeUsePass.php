@@ -14,7 +14,7 @@
 	<body style=background-color:white;>
 	
 	<link rel="stylesheet" type="text/css" href="CSS/common.css">
-	<?php require 'navbar.php'; //Navigation bar
+	<?php require 'backnav.php'; //Navigation bar
         ?>
 	<?php 
 	session_start();

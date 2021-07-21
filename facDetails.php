@@ -12,7 +12,7 @@
 	<link rel="icon" href="pageImages/mobileHomeImg.png" type="image/icon type">
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
     
-    <?php  require 'navbar.php'; //Navigation bar?>
+    <?php  require 'backnav.php'; //Navigation bar?>
     </head>
 
 	</head>
