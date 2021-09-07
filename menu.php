@@ -70,7 +70,7 @@ body {
 </div>
 
 <div id="main">
-  <span  style=" $size:250px; font-size:30px;cursor:pointer;position:absolute;top:60;left:40;float:left;" onclick="openNav()">&#9776;</span>
+  <span  style="size:250px; font-size:30px;cursor:pointer;position:absolute;top:60;left:40;float:left;" onclick="openNav()">&#9776;</span>
 </div>
 
 <script>

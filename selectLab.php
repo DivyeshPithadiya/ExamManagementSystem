@@ -48,8 +48,10 @@
 	$res=mysqli_query($conn,$q);
 
 	?>
+		<form style=margin-left:200; action="information.php" method="POST">
+			<button class="demo6 btn" style= height:40px;width:120;>Go Back</button>
+		</form>
 
-		
 		<form style=margin-left:200; name="myform" onsubmit="return validate()" method="get" action="storeLabDetails.php" >
 
 				Select Subject <br><select class="demo7" name="subject"  required>
@@ -94,6 +96,9 @@
 	
 
 	<div style=position:absolute;left:700;top:80;>
+
+	
+			
 		<?php
 
 			//Showing the Details of Subjects,Dates and Semesters
@@ -101,7 +106,7 @@
 			$sre=mysqli_query($conn,$s);
 
 			echo "<p> <b><u>Semester ".$sem." Subjects and Their Assigned Dates <u></b></p>";
-			echo "<table border='2'  class='table table-striped'>
+			echo "<table border='2' id='timeTableExport' class='table table-striped'>
 			<thead classs='thead-dark'>
 				<tr>
 					<th>Subject</th>
@@ -127,6 +132,29 @@
 			mysqli_close($conn);
 
 		?>
+
+		<input type="button" class="demo6 btn" style="padding:5px;margin:10px 10px 10px 0px" id="btnExport" value="Export" onclick="Export()" />
+			<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.1.22/pdfmake.min.js"></script>
+			<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/0.4.1/html2canvas.min.js"></script>
+			<script type="text/javascript">
+				// var texting = document.getElementById('timeTableExport')
+				// console.log(texting)
+				function Export() {
+					html2canvas(document.getElementById('timeTableExport'), {
+						onrendered: function (canvas) {
+							var data = canvas.toDataURL();
+							var docDefinition = {
+								content: [{
+									image: data,
+									width: 500
+								}]
+							};
+							pdfMake.createPdf(docDefinition).download("TimeTable.pdf");
+						}
+					});
+				}
+				console.log("Exported")
+			</script>
 	</div>
 
 
