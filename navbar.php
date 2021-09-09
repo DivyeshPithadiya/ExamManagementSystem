@@ -14,10 +14,10 @@
             <ul class="demo">
            
                 <a href="index.php"><li class="demo0">Home</li></a>
-                <a href="userlogin.php"><li class="demo0">Faculty Login</li></a>
                 <a href="showLab.php"><li class="demo0">Practical/Oral Time Table</li></a>
                 <a href="showTT.php"><li class="demo0">Term Test Time Table</li></a>
                 <a href="noticeShow.php"><li class="demo0">Notice Board</li></a>
+                <a href="userlogin.php"><li class="demo0">Faculty Login</li></a>
                 <a href="panel.php"><li class="demo0">Admin Panel</li></a>
 
                 <!-- <form method="POST" action="logout.php">

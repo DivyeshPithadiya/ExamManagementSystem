@@ -5,7 +5,7 @@
 		Select Lab
 	</title>
 	<link rel="icon" href="pageImages/mobileHomeImg.png" type="image/icon type">
-		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"></head>
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
 	</head>
 	
 	<body style=background-color:white;>
@@ -131,30 +131,8 @@
 			mysqli_commit($conn);
 			mysqli_close($conn);
 
-		?>
 
-		<input type="button" class="demo6 btn" style="padding:5px;margin:10px 10px 10px 0px" id="btnExport" value="Export" onclick="Export()" />
-			<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.1.22/pdfmake.min.js"></script>
-			<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/0.4.1/html2canvas.min.js"></script>
-			<script type="text/javascript">
-				// var texting = document.getElementById('timeTableExport')
-				// console.log(texting)
-				function Export() {
-					html2canvas(document.getElementById('timeTableExport'), {
-						onrendered: function (canvas) {
-							var data = canvas.toDataURL();
-							var docDefinition = {
-								content: [{
-									image: data,
-									width: 500
-								}]
-							};
-							pdfMake.createPdf(docDefinition).download("TimeTable.pdf");
-						}
-					});
-				}
-				console.log("Exported")
-			</script>
+		?>
 	</div>
 
 

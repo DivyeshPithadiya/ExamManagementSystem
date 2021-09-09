@@ -9,6 +9,7 @@ Faculty:
 
 Admin Panel:
 1. Start and end time for term test booking
+2. Add a logout link for ending the session
 
 Notice Board:
 1. Remove Image tag from Notice Board and add a hyperlink for the pdf/data provided
@@ -26,4 +27,4 @@ Final paper must be downloadable in pdf format
 
 
 Practical Time Table:
-1. Add alloted dates in information page.
+1. Add alloted dates in information page. // They can directly see that using the practical/oral time table
