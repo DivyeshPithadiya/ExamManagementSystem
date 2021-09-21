@@ -28,8 +28,9 @@
     while ($row = mysqli_fetch_array($res)) 
     {
       echo "<div id='img_div'>";
-      	echo "<img src='images/".$row['image']."' onclick='window.open(this.src)' style=height:200px ;width:2000px; >";
-    echo "<p>".$row['image_text']."</p>";
+      	// echo "<img src='images/".$row['image']."' onclick='window.open(this.src)' style=height:200px ;width:2000px; >";
+    // echo "<p>".$row['image_text']."</p>";
+    echo "<a href='images/".$row['image']."'>".$row['image_text']."</a>";
     echo "<p>Uploaded On: ".$row['uploadDate']."</p>";
       echo "</div>";
     }

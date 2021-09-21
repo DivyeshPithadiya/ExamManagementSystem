@@ -13,7 +13,7 @@
 
 <body>
 
-<?php require 'navbar.php'; //Navigation bar
+<?php require 'backnav.php'; //Navigation bar
      ?>
 
 <?php 

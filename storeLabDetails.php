@@ -49,46 +49,46 @@
 		$row1=mysqli_fetch_array($res1);
 
 
-	if($date1==$date2 && ($date1!=null && $date2!=null) ) /* check wheather user is not inserting same dates for two batches */
-	{	
-		header("Location:selectLab.php?message=Please Select Different Dates for Batch 1/2 and Batch 3/4");
-	}
-	else 
-	{
-		if($date1==$date3 && ($date1!=null && $date3!=null) )
-		{
-			header("Location:selectLab.php?message=Please Select Different Dates for Batch 1/2 and Batch 5/6");
-		}
-		else 
-		{
-			if($date1==$date4 && ($date1!=null && $date4!=null))
-			{
-				header("Location:selectLab.php?message=Please Select Different Dates for Batch 1/2 and Batch 7/8");
+	// if($date1==$date2 && ($date1!=null && $date2!=null) ) /* check wheather user is not inserting same dates for two batches */
+	// {	
+	// 	header("Location:selectLab.php?message=Please Select Different Dates for Batch 1/2 and Batch 3/4");
+	// }
+	// else 
+	// {
+	// 	if($date1==$date3 && ($date1!=null && $date3!=null) )
+	// 	{
+	// 		header("Location:selectLab.php?message=Please Select Different Dates for Batch 1/2 and Batch 5/6");
+	// 	}
+	// 	else 
+	// 	{
+	// 		if($date1==$date4 && ($date1!=null && $date4!=null))
+	// 		{
+	// 			header("Location:selectLab.php?message=Please Select Different Dates for Batch 1/2 and Batch 7/8");
 
-			}
-			else 
-			{
-				if($date2==$date3 && ($date2!=null && $date3!=null))
-				{
-					header("Location:selectLab.php?message=Please Select Different Dates for Batch 3/4 and Batch 5/6");
+	// 		}
+	// 		else 
+	// 		{
+	// 			if($date2==$date3 && ($date2!=null && $date3!=null))
+	// 			{
+	// 				header("Location:selectLab.php?message=Please Select Different Dates for Batch 3/4 and Batch 5/6");
 
-				}
-				else 
-				{
-					if($date2==$date4 && ($date2!=null && $date4!=null))
-					{
-						header("Location:selectLab.php?message=Please Select Different Dates for Batch 3/4 and Batch 7/8");
+	// 			}
+	// 			else 
+	// 			{
+	// 				if($date2==$date4 && ($date2!=null && $date4!=null))
+	// 				{
+	// 					header("Location:selectLab.php?message=Please Select Different Dates for Batch 3/4 and Batch 7/8");
 
-					}
-					else 
-					{
-						if($date3==$date4 && ($date3!=null && $date4!=null) )
-						{
-							header("Location:selectLab.php?message=Please Select Different Dates for Batch 5/6 and Batch 7/8");
+	// 				}
+	// 				else 
+	// 				{
+	// 					if($date3==$date4 && ($date3!=null && $date4!=null) )
+	// 					{
+	// 						header("Location:selectLab.php?message=Please Select Different Dates for Batch 5/6 and Batch 7/8");
 
-						}
+	// 					}
 					/* check wheather user is not inserting same dates for two batches */
-						else 
+						// else 
 						{
 
 											
@@ -289,7 +289,7 @@
 														}
 													}
 
-													header("Location:information.php?message=Dates Alloted");
+													header("Location:selectLab.php?message=Dates Alloted");
 												}
 
 											}
@@ -306,12 +306,7 @@
 							}
 						}
 
-					}
-
-				}
-			}
-		}
-	}
+					
 
 	mysqli_commit($conn);
 	mysqli_close($conn);

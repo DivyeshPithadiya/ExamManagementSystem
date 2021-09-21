@@ -36,26 +36,26 @@
   $result = mysqli_query($conn, "select * from images");
 ?>
 <html>
+
 <head>
 	<title>
 		Upload/Delete Notice
 	</title>
 	<link rel="icon" href="pageImages/mobileHomeImg.png" type="image/icon type">
-    <link rel="stylesheet" type="text/css" href="CSS/noticeImg.css">
+    <!-- <link rel="stylesheet" type="text/css" href="CSS/noticeImg.css"> -->
     <link rel="stylesheet" type="text/css" href="CSS/common.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"></head>
 </head>
 <body>
-
-<?php require 'navbar.php'; //Navigation bar
+<?php require 'backnav.php'; //Navigation bar
         ?>
 		
 	<center><p><font color="#cc0500" size="6"><center><b>Notice Board</font></b></center></p>
-<div id="content">
+<div style='  width: 50%;margin: 20px auto;border: 1px solid #cbcbcb;'>
   <?php
     while ($row = mysqli_fetch_array($result)) 
     {
-      echo "<div id='img_div'>";
+      echo "<div style='width: 80%;padding: 5px;margin: 15px auto;border: 1px solid #cbcbcb;'>";
       	echo "<img src='images/".$row['image']."' onclick='window.open(this.src)' style=height:200px ;width:2000px; >";
 		echo "<p>".$row['image_text']."</p>";
 		echo "<p> Uploaded On: ".$row['uploadDate']."</p>";
@@ -65,7 +65,7 @@
 	mysqli_commit($conn);
 	mysqli_close($conn);
   ?>
-  <form method="POST" action="notice.php" enctype="multipart/form-data">
+  <form style="width: 50%;margin: 20px auto;" method="POST" action="notice.php" enctype="multipart/form-data">
   	<input type="hidden" name="size" value="1000000">
   	<div>
   	  <input type="file" name="image">

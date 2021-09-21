@@ -22,7 +22,7 @@
 	
 	
 	
-	<?php require 'navbar.php'; //Navigation bar
+	<?php require 'backnav.php'; //Navigation bar
         ?>
 
 <?php 
@@ -78,10 +78,16 @@
                     <br>
                     <br>
 
-                    Time<br>
+                    Start Time<br>
                     <input type="time" class="demo7" name="time" required></input>
+                    
                     <br>
-                    <button type="submit" class="demo6 btn" style= height:40px;>Add</button>
+                    <br>
+
+                    End Time<br>
+                    <input type="time" min="09:00" max="18:00" class="demo7" name="endtime" required></input>
+                    <br>
+                    <button type="time" class="demo6 btn" style= height:40px;>Add</button>
 
                 </form>
 
@@ -96,7 +102,7 @@
 
                 ?>
 			
-				<?php                          //Display All Subject of Semester
+				<?php //Display All Subject of Semester
                 
                     echo "<table class='table table-striped'>";
 
@@ -121,13 +127,14 @@
             <tr>
                 <th>Subject</th>
                 <th>Date</th>
-                <th>Time</th>
+                <th>Start Time</th>
+                <th>End Time</th>
                 <th>Delete Record</th>
             </tr>
             </thead>";
           
 
-                $tq="select UID,UTDate, subjects.Sub, UTime, semester.SemName from ut_tt,semester,subjects where subjects.SuID=ut_tt.Sub and ut_tt.sem=semester.SemID and ut_tt.Sem=".$sem." order by ut_tt.sem , ut_tt.UTDate , ut_tt.UTime";
+                $tq="select UID,UTDate, subjects.Sub, UTime, EndTime, semester.SemName from ut_tt,semester,subjects where subjects.SuID=ut_tt.Sub and ut_tt.sem=semester.SemID and ut_tt.Sem=".$sem." order by ut_tt.sem , ut_tt.UTDate , ut_tt.UTime";
                 $tr=mysqli_query($conn,$tq);
                 while($tro=mysqli_fetch_array($tr))
                 {
@@ -136,6 +143,7 @@
                             <td>".$tro['Sub']."</td>
                             <td>".$tro['UTDate']."</td>
                             <td>".$tro['UTime']."</td>
+                            <td>".$tro['EndTime']."</td>
                             <td><a href='deleteUT.php?id=".$tro['UID']." '>Delete</a></td>
                           </tr>";
                 }

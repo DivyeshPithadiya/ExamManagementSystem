@@ -65,7 +65,7 @@
 				{
 					echo "&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<li style='display:inline-block;'><b><a href='noticeShow.php' class><span style='color:brown;'>* ".$row['image_text']."(".$row['uploadDate'].")"."</span></a></b></li>";
 					$i++;
-					if($i==5)
+					if($i==100)
 					{
 						break;
 					}

@@ -34,7 +34,7 @@
 					?>
 
 					<button type="submit" class="demo6 btn">Login</button>
-					<button type="reset" class="demo6 btn"style="margin-right:235px;">Reset</button>
+					<!-- <button type="reset" class="demo6 btn"style="margin-right:235px;">Reset</button> -->
 					
 					</center>
 

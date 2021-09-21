@@ -6,6 +6,7 @@
 	$sub=$_POST['sub'];
 	$date=$_POST['date'];
     $time=$_POST['time'];
+    $endtime=$_POST['endtime'];
     
     $q0="select Sub from subjects where SuID='$sub'";
     $r0=mysqli_query($conn,$q0);
@@ -25,10 +26,14 @@
         $q3="select count(UTime) from ut_tt where UTdate='$date' and UTime='$time' and sem=$sem";
         $r3=mysqli_query($conn,$q3);
         $ro3=mysqli_fetch_array($r3);
+		
+		$q4="select count(UTime) from ut_tt where UTdate='$date' and UTime='$time' and sem=$sem";
+        $r4=mysqli_query($conn,$q4);
+        $ro4=mysqli_fetch_array($r4);
 
-        if(($ro2['count(Sub)']<2) && ($ro3['count(UTime)']==0))
+        if(($ro2['count(Sub)']<2) && ($ro3['count(UTime)']==0) && ($ro4['count(EndTime)']==0))
         {
-            $qf="insert into ut_tt(UTDate,Sub,UTime,Sem) values('$date','$sub','$time',$sem)"; //Storing data into the Table of Unit Test
+            $qf="insert into ut_tt(UTDate,Sub,UTime,EndTime,Sem) values('$date','$sub','$time','$endtime',$sem)"; //Storing data into the Table of Unit Test
 			$resf=mysqli_query($conn,$qf);
 			header("Location:UT_TT.php?message=Exam Data Stored for ".$ro0['Sub']." Subject");
         }

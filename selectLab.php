@@ -5,7 +5,7 @@
 		Select Lab
 	</title>
 	<link rel="icon" href="pageImages/mobileHomeImg.png" type="image/icon type">
-		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"></head>
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
 	</head>
 	
 	<body style=background-color:white;>
@@ -48,8 +48,10 @@
 	$res=mysqli_query($conn,$q);
 
 	?>
+		<form style=margin-left:200; action="information.php" method="POST">
+			<button class="demo6 btn" style= height:40px;width:120;>Go Back</button>
+		</form>
 
-		
 		<form style=margin-left:200; name="myform" onsubmit="return validate()" method="get" action="storeLabDetails.php" >
 
 				Select Subject <br><select class="demo7" name="subject"  required>
@@ -94,6 +96,9 @@
 	
 
 	<div style=position:absolute;left:700;top:80;>
+
+	
+			
 		<?php
 
 			//Showing the Details of Subjects,Dates and Semesters
@@ -101,7 +106,7 @@
 			$sre=mysqli_query($conn,$s);
 
 			echo "<p> <b><u>Semester ".$sem." Subjects and Their Assigned Dates <u></b></p>";
-			echo "<table border='2'  class='table table-striped'>
+			echo "<table border='2' id='timeTableExport' class='table table-striped'>
 			<thead classs='thead-dark'>
 				<tr>
 					<th>Subject</th>
@@ -125,6 +130,7 @@
 
 			mysqli_commit($conn);
 			mysqli_close($conn);
+
 
 		?>
 	</div>
